@@ -178,3 +178,110 @@ puts 'Zoo'.downcase < 'ant'
 # else
 #   puts 'your name is NOT lindsay or banjo'
 # end
+
+
+# currNum = 99
+# while currNum > 0
+# if currNum > 1
+#   puts (currNum.to_s) + " bottles of beer on the wall"
+# else currNum == 1
+#   puts (currNum.to_s) + " bottle of beer on the wall"
+# end
+# currNum = currNum - 1
+# end
+
+# puts "waht do you want?"
+# response = gets.chomp
+# if response == response.upcase
+#   puts "no not sense".upcase + " " + (1920 + rand(20)).to_s
+# else
+#   puts "huh, speak up hunny".upcase
+# end
+
+
+# puts 'what do you want?'
+# bye = 0
+# while bye < 3
+#   response = gets.chomp
+# if response == 'BYE'
+#   puts "what I can't hear you?"
+#   bye = bye + 1
+# elsif response == response.upcase
+#   puts "no not sense".upcase + " " + (1920 + rand(20)).to_s
+# else
+#   puts 'huh, speak up hunny'.upcase
+#   end
+# if bye == 3
+#   puts 'oh, ok. goodbye!'.upcase
+# end
+# end
+
+# puts "what is the first year"
+# year1 = gets.chomp
+# puts "what is the last year"
+# year2 = gets.chomp
+# leap_year = year1.to_i + year2.to_i % 4
+#
+# while leap_year.to_i <= year2.to_i
+#   if leap_year % 100 != 0 || leap_year %400 ==0
+#     puts leap_year
+#   end
+#   leap_year = leap_year + 4
+# end
+
+
+languages = ['English', 'German', 'Ruby']
+languages.each do |lang|
+  puts 'I love ' + lang + '!'
+end
+
+3.times do
+  puts "hip hip hooray"
+end
+
+foods = ['artichoke', 'brioche', 'caramel']
+puts foods.to_s
+puts foods.join(', ')
+puts foods.join(' :) ')
+5.times do
+  puts ['things']
+end
+
+favorites = []
+favorites.push 'banjo'
+favorites.push 'beer'
+favorites.push 'things' 'more things'
+puts favorites
+puts favorites.length
+favorites.pop
+puts favorites
+puts favorites.length
+
+# unsortedArray = ['banjo', 'beer', 'hiking', 'coding']
+# puts unsortedArray.sort
+# puts 'what is your favorite thing?'
+# response = gets.chomp
+# unsortedArray.push response
+# puts unsortedArray.sort
+#
+
+def sayMoo numberOfMoos
+  puts 'mooooooo...'*numberOfMoos
+end
+sayMoo 3
+
+
+def littlePest var
+  var = nil
+  puts 'HA! I ruined your variable'
+end
+var = "You can't have my variable"
+littlePest var
+puts var
+
+def sayMoo numberOfMoos
+  puts 'mooooooo...'*numberOfMoos
+  'yellow submarine'
+end
+x = sayMoo 2
+puts x
