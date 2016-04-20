@@ -263,7 +263,7 @@ puts favorites.length
 # response = gets.chomp
 # unsortedArray.push response
 # puts unsortedArray.sort
-#
+
 
 def sayMoo numberOfMoos
   puts 'mooooooo...'*numberOfMoos
